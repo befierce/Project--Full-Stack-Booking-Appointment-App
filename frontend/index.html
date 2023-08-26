@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+            background-color: #34495e; /* Change background color */
+            color: #fff; /* Change text color */
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1; /* Change container background color */
+        }
+
+        .container form {
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* .container label,
+        .container input[type="text"],
+        .container input[type="submit"] {
+            margin-bottom: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <header><h2><b>Book Your Appointment With Us</b></h2></header><br><br>
+    <div class="container">
+        <form id="details">
+            <label for="name">Enter Name:</label><br>
+            <input type="text" id="name" style="width: 30%" required><br>
+            <label for="email">Enter Email:</label><br>
+            <input type="text" id="email" style="width: 30%" required><br>
+            <label for="number">Enter Number:</label><br>
+            <input type="text" id="number" style="width: 30%" required><br>
+            <input type="submit" value="Submit">
+<!-- --------------------------  -------------------------  -------------------  -->
+            <ul id="users" class="list-group">
+                <!-- <li class="list-group-item">Dummy USER</li> -->
+            </ul>
+        </form>
+    </div>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src ="index.js"></script>
+</body>
+</html>
